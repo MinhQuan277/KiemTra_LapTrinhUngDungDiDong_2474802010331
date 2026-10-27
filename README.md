@@ -8,3 +8,7 @@
 
 ## Minh chứng Câu 2
 ![Profile Intent](screenshots/cau2_profile_intent.jpg)
+
+## Minh chứng Câu 3
+![ListView Display](screenshots/cau3_listview_display.jpg)
+![Item Click Toast](screenshots/cau3_item_click_toast.jpg)
