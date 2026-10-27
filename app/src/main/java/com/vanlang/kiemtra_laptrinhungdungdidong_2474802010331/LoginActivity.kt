@@ -1,5 +1,6 @@
 package com.vanlang.kiemtra_laptrinhungdungdidong_2474802010331
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
 import android.widget.Button
@@ -32,8 +33,12 @@ class LoginActivity : AppCompatActivity() {
                     tvStatus.text = "Email sai định dạng!"
                 password.length < 6 ->
                     tvStatus.text = "Mật khẩu phải có ít nhất 6 ký tự!"
-                else ->
+                else -> {
                     tvStatus.text = "Xác thực thành công!"
+                    val intent = Intent(this, ProfileActivity::class.java)
+                    intent.putExtra("EXTRA_EMAIL", email)
+                    startActivity(intent)
+                }
             }
         }
     }
